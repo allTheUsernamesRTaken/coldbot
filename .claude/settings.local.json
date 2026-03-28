@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(py --version)",
+      "Bash(where python:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m venv .venv)",
+      "Bash(.venv/Scripts/pip install:*)",
+      "Bash(where uv:*)",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m pip install uv)",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m uv --version)",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m uv pip install langgraph langchain langchain-anthropic langchain-openai langchain-voyageai langchain-community supabase httpx beautifulsoup4 pdfplumber python-whois mangum fastapi uvicorn)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(ls c:/Users/danie/OneDrive/Desktop/coldbot/frontend/node_modules/.bin/tailwind*)",
+      "Bash(node -e \"const p = require\\(''''./node_modules/tailwindcss/package.json''''\\); console.log\\(p.version\\)\")",
+      "Bash(.venv/Scripts/python.exe -c \"import fastapi, langgraph, langchain_anthropic, supabase, mangum; print\\(''all imports OK''\\)\")",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m uv pip install --python .venv/Scripts/python.exe langgraph langchain langchain-anthropic langchain-openai langchain-voyageai langchain-community supabase httpx beautifulsoup4 pdfplumber python-whois mangum fastapi uvicorn)",
+      "Bash(.venv/Scripts/pip freeze:*)",
+      "Bash(C:/Users/danie/AppData/Local/Programs/Python/Python314/python.exe -m uv pip freeze --python c:/Users/danie/OneDrive/Desktop/coldbot/backend/.venv/Scripts/python.exe)"
+    ]
+  }
+}

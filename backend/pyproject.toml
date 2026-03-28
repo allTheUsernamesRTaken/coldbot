@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coldbot"
+version = "0.1.0"
+description = "ColdBot backend — Lambda + LangGraph agent"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-anthropic",
+    "langchain-openai",
+    "langchain-voyageai",
+    "langchain-community",
+    "supabase",
+    "httpx",
+    "beautifulsoup4",
+    "pdfplumber",
+    "python-whois",
+    "mangum",
+    "fastapi",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
